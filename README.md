@@ -1,5 +1,14 @@
-# 3D Occupancy Map
-The python file occupancy_ply.py contrains two functions, is_occupied and is_occupied_2. Both of these functions take a point cloud, coordinates, and a threshold (representing the grid size) as inputs, and return whether there is a point within the space centered around the given coordinates, within a radius equal to the threshold. 
+## 3D Occupancy Map
 
-Usage: python occupancy_ply.py <function_name> <x> <y> <z> <file_name> <threshold>
-where x,y,z are coordinates of point in meter, file_name is the point cloud file.
+The `occupancy_ply.py` script contains two functions, `is_occupied` and `is_occupied_2`. These functions are designed to process a point cloud and determine whether a specified space, centered around given coordinates, contains any points within a defined threshold radius.
+
+### Usage
+
+To use the script, execute the following command in your terminal:
+
+```bash
+python occupancy_ply.py <function_name> <x> <y> <z> <file_name> <threshold>
+- `<function_name>`: The name of the function to use (`is_occupied` or `is_occupied_2`).
+- `<x>`, `<y>`, `<z>`: The coordinates of the point in meters.
+- `<file_name>`: The name of the point cloud file.
+- `<threshold>`: The radius of the space around the coordinates (in meters) within which the presence of points is checked.
